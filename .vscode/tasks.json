@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "runner": "terminal",
+    "tasks": [
+        {
+            "label": "Compile",
+            "command": "go run",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "args": ["${relativeFile}"]
+
+           
+        }
+    ]
+}

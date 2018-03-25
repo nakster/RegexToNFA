@@ -1,5 +1,7 @@
 package util
 
+import "fmt"
+
 type state struct {
 	symbol rune
 	edge1  *state
@@ -16,6 +18,22 @@ type nfa struct {
 func ReturnNFA(pofix string) *nfa {
 
 	nfaStack := []*nfa{}
+	for _, r := range pofix {
+		switch r {
+		case '.':
 
+		case '|':
+
+		case '*':
+
+		default:
+
+		}
+
+	}
+	//handles errors
+	if len(nfaStack) != 1 {
+		fmt.Println("Sorry more than 1 nfa found", len(nfaStack), nfaStack)
+	}
 	return nfaStack[0]
 }

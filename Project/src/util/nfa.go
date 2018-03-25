@@ -37,3 +37,17 @@ func ReturnNFA(pofix string) *nfa {
 	}
 	return nfaStack[0]
 }
+
+/////////////////////////////MATCHING/////////////////////
+
+func pomatch(po string, s string) bool {
+
+	return false
+}
+
+func addState(l []*state, s *state, a *state) []*state {
+
+	l = append(l, s)
+
+	return l
+}

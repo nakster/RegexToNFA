@@ -21,7 +21,15 @@ func ReturnNFA(pofix string) *nfa {
 	for _, r := range pofix {
 		switch r {
 		case '.':
+			frag2 := nfaStack[len(nfaStack)-1]
+			nfaStack = nfaStack[:len(nfaStack)-1]
 
+			frag1 := nfaStack[len(nfaStack)-1]
+			nfaStack = nfaStack[:len(nfaStack)-1]
+
+			frag1.accept.edge1 = frag2.initial
+
+			nfaStack = append(nfaStack, &nfa{initial: frag1.initial, accept: frag2.accept})
 		case '|':
 
 		case '*':

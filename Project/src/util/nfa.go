@@ -57,6 +57,10 @@ func ReturnNFA(pofix string) *nfa {
 			nfaStack = append(nfaStack, &nfa{initial: &initial, accept: &accept})
 
 		default:
+			accept := state{}
+			initial := state{symbol: r, edge1: &accept}
+
+			nfaStack = append(nfaStack, &nfa{initial: &initial, accept: &accept})
 
 		}
 

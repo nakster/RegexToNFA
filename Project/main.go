@@ -30,7 +30,19 @@ func main() {
 		//print the infix the user entered
 		fmt.Println("infix", infixString)
 		// then send the string to intopost which changes it from infix to postfix
-		fmt.Println("postfix notation:", util.IntoPost(infixString))
+		//(a.(b|d))* used asa example
+		newPost := util.IntoPost(infixString)
+		fmt.Println("postfix notation:", newPost)
+
+		fmt.Print("Enter a string to test if it matches the nfa: ")
+		userTest, err := util.ReadFromInput()
+
+		if err != nil {
+			fmt.Println("Error when scanning input:", err.Error()) /*  */
+			return
+		}
+
+		fmt.Println("Does the string adabadabadab match ?", util.Pomatch(newPost, userTest))
 
 	case 2:
 		fmt.Println("Option", input, "Was Entered !!!")

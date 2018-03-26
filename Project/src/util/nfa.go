@@ -74,7 +74,7 @@ func ReturnNFA(pofix string) *nfa {
 
 /////////////////////////////MATCHING/////////////////////
 
-func pomatch(po string, s string) bool {
+func Pomatch(po string, s string) bool {
 
 	ismatch := false
 

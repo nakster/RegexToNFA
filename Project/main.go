@@ -42,12 +42,32 @@ func main() {
 			return
 		}
 
-		fmt.Println("Does the string adabadabadab match ?", util.Pomatch(newPost, userTest))
+		fmt.Println("Does the string", userTest, " match ?", util.Pomatch(newPost, userTest))
 
 	case 2:
+		//show which option was choosen
 		fmt.Println("Option", input, "Was Entered !!!")
+		//promt the user to enter the infix string
+		fmt.Print("Enter postfix expression: ")
+		//use the readfrominput method to get the data from the user
+		infixString, err := util.ReadFromInput()
+		//error handle the data
+		if err != nil {
+			fmt.Println("Error when scanning input:", err.Error()) /*  */
+			return
+		}
+
+		fmt.Print("Enter a string to test if it matches the nfa: ")
+		userTest, err := util.ReadFromInput()
+
+		if err != nil {
+			fmt.Println("Error when scanning input:", err.Error()) /*  */
+			return
+		}
+
+		fmt.Println("Does the string", userTest, " match ?", util.Pomatch(infixString, userTest))
 	default:
-		fmt.Println("Enter on of the following options")
+		fmt.Println("Enter one of the above options")
 	}
 
 }

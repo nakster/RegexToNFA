@@ -61,10 +61,11 @@ func ReturnNFA(pofix string) *nfa {
 
 			accept := state{}
 			initial := state{edge1: frag.initial, edge2: &accept}
+
 			frag.accept.edge1 = &initial
+			frag.accept.edge2 = &accept
 
 			nfaStack = append(nfaStack, &nfa{initial: frag.initial, accept: &accept})
-
 		case '?':
 			frag := nfaStack[len(nfaStack)-1]
 			nfaStack = nfaStack[:len(nfaStack)-1]

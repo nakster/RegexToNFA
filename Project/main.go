@@ -11,14 +11,14 @@ func main() {
 	toExit := true
 
 	//for loop keeps going until the user enters 3 to exit
-	for toExit{
+	for toExit {
 		//ask the user which option they like
 		fmt.Println("\nstart of the project")
 		fmt.Print("Please Enter \n 1) For infix Expressions Conversion To NFA\n 2) For postFix Expressions Conversion To NFA \n 3) To Exit\n")
 		var input int
 		fmt.Scanln(&input)
 
-			switch input {
+		switch input {
 		case 1:
 			//show which option was choosen
 			fmt.Println("Option", input, "Was Entered !!!")
@@ -71,7 +71,7 @@ func main() {
 
 			fmt.Println("Does the string", userTest, " match ?", util.Pomatch(infixString, userTest))
 		default:
-			toExit = false;
+			toExit = false
 			fmt.Println("Enter one of the above options")
 		}
 	}

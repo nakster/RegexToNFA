@@ -3,7 +3,7 @@
 
 ## Intro
 A program in the Go programming language that can build a NFA from a regular expression
-
+This Project is for 3rd Year of software.
 
 ## Context
 The following project concerns a real-world problem – one that you could
@@ -30,5 +30,20 @@ star” respectively. So, 0.1 means a 0 followed by a 1, 0|1 means a 0 or a 1,
 and 1∗ means any number of 1’s. These special characters must be used in
 your submission.
 
+## Setup Instructions
+
+ - First you need to have Go Downloaded on your machine  
+ - Download or clone
+ - First step is to clone my repository
+ - Then go to cmd and change to the folder you cloned
+ - run the following commands
+ - Go Build "main.go"
+ - Then run the Excutable file
+ - ./"main.go".exe
+ - or
+ - Just run as "Go run Main.go"
+
+## Technologies I used
+[GoLang](https://golang.org/)
 ## Links 
 - [links](./Research.md)

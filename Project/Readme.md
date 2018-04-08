@@ -32,7 +32,7 @@ your submission.
 
 ## Setup Instructions
 
- - First you need to have Go Downloaded on your machine  
+ - First you need to have Go [Downloaded](https://golang.org/doc/install?download) on your machine  
  - Download or clone
  - First step is to clone my repository
  - Then go to cmd and change to the folder you cloned

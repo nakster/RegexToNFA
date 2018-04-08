@@ -3,7 +3,7 @@ package util
 //this func turns the infix string to postfix
 func IntoPost(infix string) string {
 	//this a map that is going to map speial characters like . * | into numbers or integers
-	specials := map[rune]int{'*': 10, '|': 9, '+': 8, '.': 7, '?': 6}
+	specials := map[rune]int{'*': 10, '|': 9, '+': 7, '?': 7, '.': 7}
 	//this stores the postfix string
 	postfix := []rune{}
 	//we put the infix on this

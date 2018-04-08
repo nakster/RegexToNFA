@@ -5,3 +5,4 @@
 - [Infix to Postfix Conversion](http://cs-study.blogspot.ie/2012/11/infix-to-postfix-conversion.html)
 - [Infix to Postfix](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
 - [Read from User](https://stackoverflow.com/questions/44772499/golang-cant-use-bufio-readstring-with-ioutil-readfile)
+- [Input link](http://golangcookbook.blogspot.ie/2012/11/strings-input-output.html)

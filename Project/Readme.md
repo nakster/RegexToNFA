@@ -16,7 +16,7 @@ different programming languages, and many of those are not experienced
 software developers. Note that a series of videos will be provided to students
 on the course page to help them with the project.
 
-##Problem statement
+## Problem statement
 You must write a program in the Go programming language [2] that can
 build a non-deterministic finite automaton (NFA) from a regular expression,
 and can use the NFA to check if the regular expression matches any given
